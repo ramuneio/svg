@@ -1,0 +1,161 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xml:space="preserve" id="mouse-potter" viewBox="0 0 300 320">
+    <title>harry potter mouse</title>
+
+    <style>
+      .stroke-dark {
+        fill: none;
+        stroke: #607d8b;
+        stroke-width: 5;
+        stroke-linecap: round;
+      }
+      .stroke-dark-thin {
+        fill: none;
+        stroke: #607d8b;
+        stroke-width: 1;
+      }
+      .stroke-white-thin {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 1;
+      }
+
+      .fill-white {
+        fill: #fff;
+      }
+      .fill-dark {
+        fill: #546e7a;
+      }
+      .fill-innerear {
+        fill: #f8bbd0;
+        opacity: 0.8;
+      }
+
+      .mouse-fur {
+        fill: #90a4ae;
+        stroke: #607d8b;
+        stroke-width: 5;
+      }
+
+      .mouse-cheeks {
+        fill: #ff80ab;
+        opacity: 0.8;
+      }
+
+      .mouse-glasses {
+        fill: rgba(255, 255, 255, 0.2);
+        stroke: #37474f;
+        stroke-width: 5;
+      }
+
+      .mouse-wand {
+        fill: rgba(255, 235, 59, 0.6);
+        stroke: #eceff1;
+        stroke-width: 1;
+      }
+      .mouse-wandlight {
+        fill: #fff;
+        opacity: 0.3;
+        stroke: none;
+        animation: expectopatronum 5s ease-in-out infinite;
+        animation-timing-function: linear;
+        transform-origin: 156px 198px;
+      }
+      @keyframes expectopatronum {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.1;
+          transform: scale(10);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+
+    <g transform="translate(0,-20)">
+       <!-- tail --> 
+      <path
+        class="stroke-dark"
+        d="M82,280 c-10,13 -20,15 -28,15 a20,20 0 0 1 -20,-20 a16,16 0 0 1 16,-16 a12,12 0 0 1 12,12 a10,10 0 0 1 -10,10 a8,8 0 0 1 -8,-8 a6,6 0 0 1 4,-6"
+      />
+       <!-- body --> 
+      <path
+        class="mouse-fur"
+        d="M80,115 a115,130 0 0 1 140,0 a32,32 0 1 1 26,52 a115,110 0 0 1 -34,118 a20,20 0 0 1 -34,10 a115,120 0 0 1 -56,0 a20,20 0 0 1 -34,-10 a115,110 0 0 1 -34,-118 a32,32 0 1 1 26,-52Z"
+      />
+       <!-- ears --> 
+      <path class="fill-innerear" d="M72,130 a18,18 0 1 0 -12,22" />
+      <path class="fill-innerear" d="M228,130 a18,18 0 1 1 12,22" />
+       <!-- cheeks --> 
+      <ellipse
+        class="mouse-cheeks"
+        cx="105"
+        cy="165"
+        rx="26"
+        ry="23"
+        transform="rotate(-22 150 200)"
+      />
+      <ellipse
+        class="mouse-cheeks"
+        cx="195"
+        cy="165"
+        rx="26"
+        ry="23"
+        transform="rotate(22 150 200)"
+      />
+       <!-- eyes --> 
+      <ellipse class="fill-dark" cx="110" cy="165" rx="16" ry="20" />
+      <ellipse class="fill-dark" cx="190" cy="165" rx="16" ry="20" />
+       <!-- eye highlights --> 
+      <circle class="fill-white" cx="111" cy="151" r="2.5" />
+      <circle class="fill-white" cx="104" cy="155" r="2" />
+      <circle class="fill-white" cx="110" cy="158" r="1.5" />
+      <line class="stroke-white-thin" x1="119" y1="145" x2="109" y2="150" />
+      <path
+        class="fill-white"
+        d="M100,185 a 4,6 45 1,0 8,0 a 4,6 -45 1,0 -8,0"
+        transform="rotate(-40 100 185)"
+      />
+      <path
+        class="fill-white"
+        d="M200,185 a 4,6 45 1,0 8,0 a 4,6 -45 1,0 -8,0"
+        transform="rotate(-130 200 185)"
+      />
+      <circle class="fill-white" cx="191" cy="151" r="2.5" />
+      <circle class="fill-white" cx="184" cy="155" r="2" />
+      <circle class="fill-white" cx="190" cy="158" r="1.5" />
+      <line class="stroke-white-thin" x1="199" y1="145" x2="189" y2="150" />
+       <!-- nose --> 
+      <path class="stroke-dark-thin" d="M130,167 q20-8 40,0 0" />
+       <!-- glasses --> 
+      <path class="mouse-glasses" d="M81,160 l-6,0" />
+      <path class="mouse-glasses" d="M137,160 l26,0" />
+      <path class="mouse-glasses" d="M219,160 l6,0" />
+      <circle class="mouse-glasses" cx="109" cy="163" r="28" />
+      <circle class="mouse-glasses" cx="191" cy="163" r="28" />
+       <!-- whiskers --> 
+      <path class="stroke-white-thin" d="M150,170 q-40,-2 -92,5" />
+      <path class="stroke-white-thin" d="M150,170 q-40,0 -100,15" />
+      <path class="stroke-white-thin" d="M150,170 q40,-2 92,5" />
+      <path class="stroke-white-thin" d="M150,170 q40,0 100,15" />
+
+      <circle class="fill-dark" cx="150" cy="168" r="7" />
+       <!-- wand --> 
+      <path
+        class="mouse-wand"
+        d="M65,275 q18,0 90,-78 l2,2 c-30,22 -80,60 -88,80"
+      />
+      <path
+        class="mouse-wand"
+        d="M65,275 l90,-78 2,2 -88,80 q-2,0 -4,-4Z"
+      />
+      <circle class="mouse-wandlight" cx="156" cy="198" r="2" />
+      <circle class="mouse-wandlight" cx="156" cy="198" r="1.2" />
+       <!-- paws --> 
+      <path class="mouse-fur" d="M88,225 a18,18 0 1 1 -15,22" />
+      <path class="mouse-fur" d="M212,225 a18,18 0 1 0 15,22" />
+    </g>
+</svg>

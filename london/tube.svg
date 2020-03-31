@@ -1,0 +1,281 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xml:space="preserve" viewBox="0 0 720 150" id="tube">
+  <title>tube-riding corgi</title>
+
+  <style>
+    .stroke-dark {
+      fill:none;
+      stroke: #607d8b;
+      stroke-width: 5;
+    }
+    .stroke-white {
+      fill: none;
+      stroke: #fff;
+      stroke-width: 2;
+    }
+    .fill-black {
+      fill: #000;
+    }
+    .fill-white {
+      fill: #fff;
+    }
+    .fill-dark {
+      fill: #263238;
+    }
+    .fill-pink {
+      fill: #f8bbd0;
+    } 
+    .fill-red {
+      fill: #FF5252;
+    }
+    .fill-blue{
+      fill: #536DFE;
+    }
+
+    .glass {
+      fill: rgba(227,242,253,.7); 
+    }
+    .floor {
+      fill: #78909C;
+    }
+    .logo-med {
+      stroke: #BBDEFB; 
+      stroke-width: 5;
+      fill: none;
+    }
+    .logo-thick {
+      stroke: #BBDEFB; 
+      stroke-width: 9;
+      fill: none;
+    }
+    .undercarriage {
+      fill: #455A64;
+    }
+    .ceiling {
+      fill: #455A64;
+    }
+    .wall {
+      fill: #B0BEC5;
+      stroke: #607D8B;
+      stroke-width: 5;  
+    }
+    .bars {
+      fill: #FFEB3B;
+      stroke: #607D8B;
+      stroke-width: 2;  
+    }
+  
+    #door-l1 {
+      animation: open-l 4.5s infinite;   
+      animation-timing-function: linear; 
+    }
+
+    #door-l2 {
+      animation: open-l 4.5s 1.5s infinite;   
+      animation-timing-function: linear; 
+    }
+
+    #door-l3 {
+      animation: open-l 4.5s 3s infinite;   
+      animation-timing-function: linear; 
+    }
+
+    @keyframes open-l {
+      0% {transform: translate(0px,0px)}
+      40% {transform: translate(0px,0px)}
+      50% {transform: translate(-30px,0px)}
+      60% {transform: translate(0px,0px)}
+      100% {transform: translate(0px,0px)}
+    }
+
+    #door-r1 {
+      animation: open-r 4.5s infinite;   
+      animation-timing-function: linear; 
+    }
+
+    #door-r2 {
+      animation: open-r 4.5s 1.5s infinite;   
+      animation-timing-function: linear; 
+    }
+
+    #door-r3 {
+      animation: open-r 4.5s 3s infinite;   
+      animation-timing-function: linear; 
+    }
+
+    @keyframes open-r {
+      0% {transform: translate(0px,0px)}
+      40% {transform: translate(0px,0px)}
+      50% {transform: translate(30px,0px)}
+      60% {transform: translate(0px,0px)}
+      100% {transform: translate(0px,0px)}
+    }
+
+    .corgi-fur {
+      fill: #ffcc80;
+      stroke: #ffe0b2;
+      stroke-width: 3;
+    }
+  </style>
+
+  <g>
+    <path id="left" class="fill-red stroke-dark" d="M40,120 c0,0 -15,0 -18,-2 c0,-50 -4,-105 11,-108 l10,0"/>
+    <path id="right" class="fill-red stroke-dark" d="M640,120 c0,0 15,0 18,-2 c0,-50 4,-105 -11,-108 l-10,0"/>
+    <path id="ceiling" class="stroke-white ceiling" d="M37,13 l606,0 0,4 -606,0Z"/>  
+    <path id="ceiling" class="stroke-dark" d="M35,10 l610,0 -5,10 -600,0Z"/>  
+    
+    <circle id="wheel" class="fill-dark stroke-dark" cx="85" cy="125" r="20"/>
+    <circle id="wheel" class="fill-dark stroke-dark" cx="195" cy="125" r="20"/>
+    <circle id="wheel" class="fill-dark stroke-dark" cx="485" cy="125" r="20"/>
+    <circle id="wheel" class="fill-dark stroke-dark" cx="595" cy="125" r="20"/>
+    <path id="carriage" class="fill-white stroke-dark" d="M40,20 l600,0 0,100 -600,0Z"/>  
+    <path id="carriage-lower" class="fill-blue stroke-dark" d="M40,100 l600,0 0,20 -600,0Z"/>  
+    <path id="under" class="stroke-dark undercarriage" d="M80,120 l120,0 -5,10 -110,0Z"/>  
+    <path id="under" class="stroke-dark undercarriage" d="M260,120 l160,0 -5,10 -150,0Z"/>  
+    <path id="under" class="stroke-dark undercarriage" d="M480,120 l120,0 -5,10 -110,0Z"/>  
+    
+    <path id="inside" class="floor stroke-dark" d="M100,20 l80,0 0,100 -80,0Z"/>  
+    <path id="inside" class="wall stroke-dark " d="M100,20 l80,0 0,85 -80,0Z"/>  
+    <path id="inside" class="bars" d="M115,22 l5,0 0,90 -5,0Z"/>  
+    <path id="inside" class="bars" d="M160,22 l5,0 0,90 -5,0Z"/>  
+    <path id="inside" class="floor stroke-dark" d="M300,20 l80,0 0,100 -80,0Z"/>  
+    <path id="inside" class="wall stroke-dark " d="M300,20 l80,0 0,85 -80,0Z"/>  
+    <path id="inside" class="bars" d="M315,22 l5,0 0,90 -5,0Z"/>  
+    <path id="inside" class="bars" d="M360,22 l5,0 0,90 -5,0Z"/>  
+    <path id="inside" class="floor stroke-dark" d="M500,20 l80,0 0,100 -80,0Z"/>  
+    <path id="inside" class="wall stroke-dark " d="M500,20 l80,0 0,85 -80,0Z"/>  
+    <path id="inside" class="bars" d="M515,22 l5,0 0,90 -5,0Z"/>  
+    <path id="inside" class="bars" d="M560,22 l5,0 0,90 -5,0Z"/>  
+
+    <circle id="logo" class="logo-thick" cx="80" cy="52" r="14"/>
+    <path id="logo" class="logo-thick" d="M57,52 l35,0 "/>        
+    <circle id="logo" class="logo-thick" cx="235" cy="70" r="20"/>
+    <path id="logo" class="logo-thick" d="M205,70 l61,0 "/>
+    <circle id="logo" class="logo-med" cx="267" cy="51" r="7"/>
+    <path id="logo" class="logo-med" d="M255,50 l24,0 "/>
+    <circle id="logo" class="logo-med" cx="417.5" cy="60" r="8"/>
+    <path id="logo" class="logo-med" d="M405,60 l25,0 "/>
+    <circle id="logo" class="logo-med" cx="621" cy="56" r="10"/>
+    <path id="logo" class="logo-med" d="M606,56 l30,0 "/>
+
+    <path id="windows" class="glass stroke-dark" d="M24,25 c8,15 5,55 3,55 l-5,0"/>
+    <rect id="windows" class="glass stroke-dark" x="50" y="40" rx="2" ry="2" width="30" height="40"/>
+    <rect id="windows" class="glass stroke-dark" x="200" y="40" rx="2" ry="2" width="35" height="40"/>
+    <rect id="windows" class="glass stroke-dark" x="245" y="40" rx="2" ry="2" width="35" height="40"/> 
+    <rect id="windows" class="glass stroke-dark" x="400" y="40" rx="2" ry="2" width="35" height="40"/>
+    <rect id="windows" class="glass stroke-dark" x="445" y="40" rx="2" ry="2" width="35" height="40"/> 
+    <rect id="windows" class="glass stroke-dark" x="600" y="40" rx="2" ry="2" width="30" height="40"/>
+
+    <path id="headlamp" class="stroke-white fill-white" d="M30,110 c0,0 -4,-6 0,-12 0,0 3,6 0,12Z"/> 
+
+
+    <!-- corgi -->
+    <g transform="translate(315,50) scale(.2)">
+      <!-- body -->
+        <path
+          class="corgi-fur"
+          d="M239,178 c0,0 12,40 -20,77 c0,0 12,35 -12,62 c0,0 11,41 -29,41 0,0 -28,0 -28,-23 c0,0 -24,5 -48,0 c0,0 0,25 -28,23 0,0 -40,0 -29,-41 c-24,-27 -12,-62 -12,-62 c-32,-37 -20,-77 -20,-77 c-21,-119 7,-167 17,-167 c0,0 40,20 60,82 c0,0 36,-16 72,0 c0,0 20,-62 60,-82 c10,0 38,48 17,167Z"
+        />
+        
+        <!-- ears --> 
+        <path
+          id="ear"
+          class="fill-pink"
+          d="M64,44 c5,0 8,60 5,100  0,0 -4,-18 -36,-40 c0,0 10,-34 31,-60Z"
+          transform="rotate(180 64,44) scale(1,-1) translate(28,-88)"
+        />
+        <path
+          id="ear"
+          class="fill-pink"
+          d="M216,44 c5,0 8,60 5,100 0,0 -4,-18 -36,-40 c0,0 10,-34 31,-60Z "
+        />
+
+        <!-- belly --> 
+        <path
+          class="fill-white stroke-white"
+          d="M150,330 c0,0 -24,5 -48,0 c0,0 -5,-35 6,-76 c-30,-5 -40,-85 18,-83 c58,2 48,78 18,83 c11,41 6,76 6,76Z"
+        />
+
+        <!-- cheek --> 
+        <path
+          class="fill-pink"
+          d="M36,198 a 18,20 -60 1,0 40,0 a 18,20 -30 1,0 -40,0 "
+        />
+        <path
+          class="fill-pink"
+          d="M176,198 a 18,20 60 1,0 40,0 a 18,20 30 1,0 -40,0 "
+        />
+
+        <!-- eyes --> 
+        <ellipse
+          class="fill-dark"
+          cx="70"
+          cy="172"
+          rx="16"
+          ry="21"
+          transform="rotate(10 70 172)"
+        />
+        <circle
+          id="eye-light1"
+          class="fill-white"
+          cx="66"
+          cy="165"
+          r="3.5"
+        />
+        <path
+          class="fill-white stroke-white"
+          d="M56,190 a 4,6 45 1,0 8,0 a 4,6 -45 1,0 -8,0"
+          transform="rotate(-40 56 190)"
+        />
+        <ellipse
+          class="fill-dark"
+          cx="182"
+          cy="172"
+          rx="16"
+          ry="21"
+          transform="rotate(-10 182 172)"
+        />
+        <circle
+          id="eye-light2"
+          class="fill-white"
+          cx="178"
+          cy="165"
+          r="3.5"
+        />
+
+        <path
+          class="fill-white stroke-white"
+          d="M186,190 a 4,6 -45 1,0 8,0 a 4,6 45 1,0 -8,0"
+          transform="rotate(40 186 190)"
+        />
+
+        <!-- tongue --> 
+        <path
+          id="tongue"
+          class="fill-pink"
+          d="M126,216 c 0,0 0,0 6,16 c 0,0 -6,8 -12,0 c 0,0 0,0 6,-16"
+        />
+
+        <!-- nose --> 
+        <path class="stroke-dark" d="M126,195 c 0,54 -25,40 -27,31" />
+        <path class="stroke-dark" d="M126,195 c 0,54 25,40 27,31" />
+        <path
+          class="fill-dark"
+          d="M126,198 c -2,0 -10,-5 -12,-12 c 0,0 12,-10 24,0 c 0,0 0,6 -12,12Z"
+        />
+    </g>
+
+    <path id="door-l1" class="fill-red stroke-dark" d="M90,19 l50,0 l0,103 l-50,0Z"/>
+    <rect id="door-l1" class="glass stroke-dark" x="110" y="30" rx="2" ry="2" width="20" height="50"/>
+    <path id="door-r1" class="fill-red stroke-dark" d="M140,19 l50,0 l0,103 l-50,0Z"/>
+    <rect id="door-r1" class="glass stroke-dark" x="150" y="30" rx="2" ry="2" width="20" height="50"/>
+    <path id="door-l2" class="fill-red stroke-dark" d="M290,19 l50,0 l0,103 l-50,0Z"/>
+    <rect id="door-l2" class="glass stroke-dark" x="310" y="30" rx="2" ry="2" width="20" height="45"/>
+    <path id="door-r2" class="fill-red stroke-dark" d="M340,19 l50,0 l0,103 l-50,0Z"/>
+    <rect id="door-r2" class="glass stroke-dark" x="350" y="30" rx="2" ry="2" width="20" height="45"/>
+    <path id="door-l3" class="fill-red stroke-dark" d="M490,19 l50,0 l0,103 l-50,0Z"/>
+    <rect id="door-l3" class="glass stroke-dark" x="510" y="30" rx="2" ry="2" width="20" height="45"/>
+    <path id="door-r3" class="fill-red stroke-dark" d="M540,19 l50,0 l0,103 l-50,0Z"/>
+    <rect id="door-r3" class="glass stroke-dark" x="550" y="30" rx="2" ry="2" width="20" height="45"/>
+  </g>
+</svg>

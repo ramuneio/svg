@@ -1,0 +1,220 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xml:space="preserve" id="corgi" viewBox="0 0 260 370">
+    <title>corgi</title>
+
+    <style>
+      .stroke-dark {
+        fill: none;
+        stroke: #607d8b;
+        stroke-width: 5;
+      }
+      .stroke-white {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 1;
+      }
+
+      .fill-white {
+        fill: #fff;
+      }
+      .fill-dark {
+        fill: #607d8b;
+      }
+      .fill-pink {
+        fill: #f8bbd0;
+      }
+
+      .corgi-fur {
+        fill: #ffcc80;
+        stroke: #ffe0b2;
+        stroke-width: 3;
+      }
+
+      #tongue {
+        animation: lick 5s infinite;
+      }
+      @keyframes lick {
+        0% {
+          opacity: 1;
+        }
+        25% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      #eye-light1 {
+        animation: twinkle1 3s infinite;
+      }
+      @keyframes twinkle1 {
+        0% {
+          opacity: 0.5;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+      #eye-light2 {
+        animation: twinkle2 3s infinite;
+      }
+      @keyframes twinkle2 {
+        20% {
+          opacity: 0.5;
+        }
+        70% {
+          opacity: 1;
+        }
+      }
+      #eye-light3 {
+        animation: twinkle3 3s infinite;
+      }
+      @keyframes twinkle3 {
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+
+    <g>
+      <!-- body -->
+      <path
+        class="corgi-fur"
+        d="M239,178 c0,0 12,40 -20,77 c0,0 12,35 -12,62 c0,0 11,41 -29,41 0,0 -28,0 -28,-23 c0,0 -24,5 -48,0 c0,0 0,25 -28,23 0,0 -40,0 -29,-41 c-24,-27 -12,-62 -12,-62 c-32,-37 -20,-77 -20,-77 c-21,-119 7,-167 17,-167 c0,0 40,20 60,82 c0,0 36,-16 72,0 c0,0 20,-62 60,-82 c10,0 38,48 17,167Z"
+      />
+      
+      <!-- ears --> 
+      <path
+        id="ear"
+        class="fill-pink"
+        d="M64,44 c5,0 8,60 5,100  0,0 -4,-18 -36,-40 c0,0 10,-34 31,-60Z"
+        transform="rotate(180 64,44) scale(1,-1) translate(28,-88)"
+      />
+      <path
+        id="ear"
+        class="fill-pink"
+        d="M216,44 c5,0 8,60 5,100 0,0 -4,-18 -36,-40 c0,0 10,-34 31,-60Z "
+      />
+
+      <!-- belly --> 
+      <path
+        class="fill-white stroke-white"
+        d="M150,330 c0,0 -24,5 -48,0 c0,0 -5,-35 6,-76 c-30,-5 -40,-85 18,-83 c58,2 48,78 18,83 c11,41 6,76 6,76Z"
+      />
+
+      <!-- cheek --> 
+      <path
+        class="fill-pink"
+        d="M36,198 a 18,20 -60 1,0 40,0 a 18,20 -30 1,0 -40,0 "
+      />
+      <path
+        class="fill-pink"
+        d="M176,198 a 18,20 60 1,0 40,0 a 18,20 30 1,0 -40,0 "
+      />
+
+      <!-- eyes --> 
+      <ellipse
+        class="fill-dark"
+        cx="70"
+        cy="172"
+        rx="16"
+        ry="21"
+        transform="rotate(10 70 172)"
+      />
+      <ellipse
+        class="fill-white stroke-white"
+        cx="65"
+        cy="153"
+        rx="6"
+        ry="4"
+        transform="rotate(-25 65 153)"
+      />
+      <circle
+        id="eye-light1"
+        class="fill-white"
+        cx="66"
+        cy="165"
+        r="3.5"
+      />
+      <circle
+        id="eye-light2"
+        class="fill-white"
+        cx="72"
+        cy="161"
+        r="2.5"
+      />
+      <circle
+        id="eye-light3"
+        class="fill-white"
+        cx="73"
+        cy="168"
+        r="2"
+      />
+      <path
+        class="fill-white stroke-white"
+        d="M56,190 a 4,6 45 1,0 8,0 a 4,6 -45 1,0 -8,0"
+        transform="rotate(-40 56 190)"
+      />
+      <ellipse
+        class="fill-dark"
+        cx="182"
+        cy="172"
+        rx="16"
+        ry="21"
+        transform="rotate(-10 182 172)"
+      />
+      <ellipse
+        class="fill-white stroke-white"
+        cx="175"
+        cy="153"
+        rx="6"
+        ry="4"
+        transform="rotate(-25 175 153)"
+      />
+      <circle
+        id="eye-light2"
+        class="fill-white"
+        cx="178"
+        cy="165"
+        r="3.5"
+      />
+      <circle
+        id="eye-light3"
+        class="fill-white"
+        cx="184"
+        cy="161"
+        r="2.5"
+      />
+      <circle
+        id="eye-light1"
+        class="fill-white"
+        cx="185"
+        cy="168"
+        r="2"
+      />
+      <path
+        class="fill-white stroke-white"
+        d="M186,190 a 4,6 -45 1,0 8,0 a 4,6 45 1,0 -8,0"
+        transform="rotate(40 186 190)"
+      />
+
+      <!-- tongue --> 
+      <path
+        id="tongue"
+        class="fill-pink"
+        d="M126,216 c 0,0 0,0 6,16 c 0,0 -6,8 -12,0 c 0,0 0,0 6,-16"
+      />
+
+      <!-- nose --> 
+      <path class="stroke-dark" d="M126,195 c 0,54 -25,40 -27,31" />
+      <path class="stroke-dark" d="M126,195 c 0,54 25,40 27,31" />
+      <path
+        class="fill-dark"
+        d="M126,198 c -2,0 -10,-5 -12,-12 c 0,0 12,-10 24,0 c 0,0 0,6 -12,12Z"
+      />
+  </g>
+</svg>

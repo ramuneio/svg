@@ -1,0 +1,159 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xml:space="preserve" viewBox="0 0 200 200" id="avatar-vic">
+  <title>vic avatar</title>
+
+  <style>
+    .fill-white {
+      fill: white;
+    }
+    .stroke-opaque {
+      fill: none;
+      stroke: rgba(0, 0, 0, 0.3);
+      stroke-width: 3;
+    }
+    .skin {
+      fill: hsl(36, 100%, 80%);
+      stroke: none;
+    }
+    .cheek {
+      fill: url(#cheek);
+    }
+    .beard {
+      fill: rgba(89, 44, 12, 0.05);
+      stroke: none;
+    }
+    .hair {
+      fill: hsla(25, 56%, 15%, 1);
+      stroke: hsla(25, 56%, 15%, 1);
+      stroke-width: 2;
+      stroke-linejoin: round;
+    }
+    .sideburns {
+      fill: hsla(25, 56%, 35%, 0.5);
+      stroke: none;
+    }
+    .hair-line {
+      fill: none;
+      stroke: hsla(25, 56%, 15%, 1);
+      stroke-width: 5;
+    }
+    .shadow {
+      fill: #000;
+      opacity:0.03;
+    }
+  </style>
+
+  <defs>
+    <radialGradient id="cheek" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop
+        offset="0%"
+          stop-color="hsla(350, 100%, 82%,.2)"
+          stop-opacity='1'
+      />
+      <stop
+        offset="100%"
+        stop-color="hsl(36, 100%, 80%)"
+         stopOpacity='1'
+      />
+    </radialGradient>
+  </defs>
+
+   <g transform="translate(100,110) scale(1)">
+     
+              <circle class="skin" cx="-56" cy="22" r="7" />
+      <circle class="skin" cx="56" cy="22" r="7" />
+      <circle class="shadow" cx="-56" cy="22" r="7" />
+      <circle class="shadow" cx="56" cy="22" r="7" />
+      <path class="skin" d="M-40,53 c38,25 42,25 80,0" />
+      <rect
+        class="skin"
+        x="-60"
+        y="-62"
+        width="120"
+        height="127"
+        rx="50"
+        ry="50"
+      />
+
+      <rect
+        class="sideburns"
+        x="-60"
+        y="-21"
+        width="4"
+        height="40"
+        rx="1"
+        ry="1"
+      />
+      <rect
+        class="sideburns"
+        x="56"
+        y="-21"
+        width="4"
+        height="40"
+        rx="1"
+        ry="1"
+      />
+      <path
+        class="hair"
+        d="M59,-10 l-2,0 a40,65 0 0 0 -35,-50 l0,-15 a35,60 0 0 1 37,65Z"
+      />
+      <path
+        class="hair"
+        d="M-59,-10 
+              l2,0 
+              a40,65 0 0 1 35,-50 
+              a40,45 0 0 0 65,-15 
+              a40,40 0 0 1 -20,-7 
+              a45,60 0 0 0 -60,10 
+              a10,10 0 0 0 -10,-6 
+              a10,10 0 0 0 6,8 a35,60 0 0 0 -18,60Z"
+      />
+      <path class="fill-white" d="M-10,39 a8,9 0 0 0 20,1Z" />
+      <ellipse
+        class="cheek"
+        cx="0"
+        cy="56"
+        rx="18"
+        ry="12"
+        transform="rotate(35,0,0)"
+      />
+      <ellipse
+        class="cheek"
+        cx="0"
+        cy="56"
+        rx="18"
+        ry="12"
+        transform="rotate(-35,0,0)"
+      />
+
+      <path class="hair-line" d="M-45,-7 l10-5 12,4" />
+      <path class="hair-line" d="M45,-7 l-10-5 -12,4" />
+
+      <ellipse
+        class="hair"
+        cx="0"
+        cy="49"
+        rx="12"
+        ry="11"
+        transform="rotate(85,0,13)"
+      />
+      <circle class="fill-white" cx="-36" cy="12" r="1.5" />
+      <circle class="fill-white" cx="-34" cy="16" r="1.1" />
+      <path class="skin" d="M-41,15 l-7,1 0,-4" />
+
+      <ellipse
+        class="hair"
+        cx="0"
+        cy="49"
+        rx="12"
+        ry="11"
+        transform="rotate(-85,0,13)"
+      />
+      <circle class="fill-white" cx="34" cy="12" r="1.5" />
+      <circle class="fill-white" cx="36" cy="16" r="1.1" />
+      <path class="skin" d="M41,15 l7,1 0,-4" />
+      <path id="nose" class="stroke-opaque" d="M-9,21 a14,14 0 0 1 18,0" />
+
+      <path class="shadow" d="M0,-110 a100,100 0 0 0 0,200" />
+    </g>
+</svg>

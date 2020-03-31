@@ -1,0 +1,316 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xml:space="preserve" id="beer" viewBox="0 0 126 180">
+  <title>beer</title>
+
+  <style>
+    #mask {
+      fill: mediumaquamarine;
+    }
+
+    .stroke-dark {
+      fill: none;
+      stroke: #607d8b;
+      stroke-width: 2;
+    }
+
+    .fill-white {
+      fill: #fff;
+      opacity: 0.9;
+      stroke: none;
+    }
+    .fill-dark {
+      fill: #607d8b;
+    }
+    .fill-pink {
+      fill: #f8bbd0;
+    }
+
+    .shade {
+      fill: rgba(0, 0, 0, 0.1);
+      stroke: none;
+    }
+
+    .eyelid {
+      fill: #ffc400;
+      stroke: #ffc400;
+      stroke-width: 2;
+    }
+    
+    #glass {
+      fill: none;
+      stroke: rgba(255, 255, 255, 0.5);
+      stroke-width: 5;
+    }
+
+    #glass-detail {
+      fill: none;
+      stroke: rgba(255, 255, 255, 0.5);
+      stroke-width: 2;
+    }
+
+    #foam {
+      fill: rgba(255, 255, 255, 0.15);
+      stroke-width: 0;
+      animation: beerfill 3s ease-in;
+    }
+
+    #liquid {
+      fill: #ffc400;
+      animation: beerfill 3s ease-in;
+    }
+    @keyframes beerfill {
+      0% {
+        transform: translate(0, 100px);
+        opacity: 0.1;
+      }
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+
+    #bubble {
+      fill: rgba(255, 255, 255, 0.5);
+      opacity: 0;
+      stroke: rgba(255, 255, 255, 0.55);
+      animation: beerfill2 4s ease 0s 1 forwards,
+        bubble 3s linear 4s infinite alternate;
+    }
+    @keyframes beerfill2 {
+      0% {
+        transform: translate(0, 60px);
+        opacity: 0;
+      }
+      50% {
+        transform: translate(0, 60px);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
+    @keyframes bubble {
+      0% {
+        transform: translate(0, 0px);
+        opacity: 1;
+      }
+      20% {
+        transform: translate(0, 5px);
+        opacity: 0.5;
+      }
+      45% {
+        transform: translate(0, 0px);
+        opacity: 1;
+      }
+      70% {
+        transform: translate(0, -5px);
+        opacity: 0.2;
+      }
+      100% {
+        transform: translate(0, 0px);
+        opacity: 1;
+      }
+    }
+
+    #bubble2 {
+      fill: rgba(255, 255, 255, 0.5);
+      opacity: 0;
+      stroke: rgba(255, 255, 255, 0.55);
+      animation: bubble2 3s 3s infinite;
+    }
+    @keyframes bubble2 {
+      0% {
+        transform: translate(0, 0);
+        opacity: 0.5;
+      }
+      50% {
+        transform: translate(0, 3px);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translate(0, 0);
+        opacity: 0.5;
+      }
+    }
+
+    #eyelid {
+      opacity: 0;
+      animation: blink 8s ease-out 4s infinite;
+    }
+    @keyframes blink {
+      51% {
+        transform: translate(0, -3px);
+        opacity: 0;
+      }
+      52% {
+        transform: translate(0, 0px);
+        opacity: 1;
+      }
+      55% {
+        transform: translate(0, 0px);
+        opacity: 1;
+      }
+      56% {
+        transform: translate(0, -3px);
+        opacity: 0;
+      }
+    }
+
+    #eye-light1 {
+      animation: twinkle1 3s 4s infinite;
+    }
+    @keyframes twinkle1 {
+      0% {
+        opacity: 0.3;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0.3;
+      }
+    }
+    #eye-light2 {
+      animation: twinkle2 3s 4s infinite;
+    }
+    @keyframes twinkle2 {
+      5% {
+        opacity: 0.3;
+      }
+      20% {
+        opacity: 0.4;
+      }
+      70% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0.4;
+      }
+    }
+    #eye-light3 {
+      animation: twinkle3 3s 4s infinite;
+    }
+    @keyframes twinkle3 {
+      50% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    #mouth {
+      opacity: 0;
+      animation: smile 3.5s linear forwards;
+      transform-origin: 63px 76px;
+    }
+    @keyframes smile {
+      0% {
+        opacity: 0;
+      }
+      95% {
+        transform: scaleY(0.2);
+        opacity: 0;
+      }
+      100% {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+    }
+    #mouthclosed {
+      animation: mouthclosed 3.5s forwards;
+      transform-origin: 63px 76px;
+    }
+    @keyframes mouthclosed {
+      0% {
+        transform: scale(0.6);
+        opacity: 1;
+      }
+      95% {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+      100% {
+        transform: scaleY(0.2);
+        opacity: 0;
+      }
+    }
+  </style>
+
+  <g transform="translate(0,25)">
+    <path
+      id="liquid"
+      d="M30,45 l8,100 c0,0 25,10 50,0 l8,-100 c0,0 -33,-10 -66,0Z"
+    />
+
+    <path
+      id="glass"
+      d="M30,30 l8,100 c0,0 25,10 50,0 l8,-100 c0,0 -33,-10 -66,0Z"
+    />
+    <path id="foam" d="M30,45 c0,0 33,10 64,0 c0,0 -33,-10 -66,0 " />
+    <path id="glass-detail" d="M30,32 c0,0 33,10 66,0" />
+    <path
+      id="mask"
+      d="M30,30 l8,100 q25,10 50,0 l8,-100 q-33,-10 -66,0 l-30,0 0,-30 126,0 0,250 -126,0 0,-220 30,0Z"
+    />
+    <path
+      id="glass-bottom"
+      class="shade"
+      d="M39,128 c0,0 24,8 48,0 c0,0 -24,-8 -48,0"
+    />
+
+    <circle id="cheek" class="fill-pink" cx="46" cy="75" r="6" />
+    <circle id="cheek" class="fill-pink" cx="80" cy="75" r="6" />
+
+    <ellipse id="eye" class="fill-dark" cx="52" cy="68" rx="6" ry="8" />
+    <circle id="eye-light1" class="fill-white" cx="50" cy="65" r="1.5" />
+    <circle id="eye-light2" class="fill-white" cx="52" cy="67.5" r="1" />
+    <circle id="eye-light3" class="fill-white" cx="53" cy="65" r=".8" />
+    <path
+      id="eye-light"
+      class="fill-white"
+      d="M46,74 a2,3 45 1,0 4,0 a2,3 -45 1,0 -4,0"
+      transform="rotate(-40 46 74)"
+    />
+
+    <ellipse id="eye" class="fill-dark" cx="74" cy="68" rx="6" ry="8" />
+    <circle id="eye-light1" class="fill-white" cx="72" cy="65" r="1.5" />
+    <circle id="eye-light2" class="fill-white" cx="74" cy="67.5" r="1" />
+    <circle id="eye-light3" class="fill-white" cx="75" cy="65" r=".8" />
+    <path
+      id="eye-light"
+      class="fill-white"
+      d="M77,71 a2,3 -45 1,0 4,0 a2,3 45 1,0 -4,0"
+      transform="rotate(40 77 71)"
+    />
+
+    <circle id="mouthclosed" class="stroke-dark" cx="63" cy="76" r="2" />
+    <path id="mouth" class="stroke-dark" d="M60,76 a3,3 0 0 0 6,0" />
+
+    <path id="eyelash" class="stroke-dark" d="M44,62 a3,3 0 0 0 3,3" />
+    <path id="eyelash" class="stroke-dark" d="M46,59 a3,3 0 0 0 3,4" />
+    <path id="eyelash" class="stroke-dark" d="M81,62 a3,3 0 0 1 -3,3" />
+    <path id="eyelash" class="stroke-dark" d="M79,59 a3,3 0 0 1 -3,4" />
+    <path
+      id="eyelid"
+      class="eyelid"
+      d="M43,66 c0,0 5,0 13,-5 c-1,-5 -11,-7 -13,5Z"
+    />
+    <path id="eyelid" class="stroke-dark" d="M43,66 c0,0 5,0 13,-5" />
+    <path
+      id="eyelid"
+      class="eyelid"
+      d="M82,66 c0,0 -5,0 -13,-5 c-1,-5 11,-7 13,5Z"
+    />
+    <path id="eyelid" class="stroke-dark" d="M82,66 c0,0 -5,0 -13,-5" />
+      <circle id="bubble2" cx="41" cy="38" r="7" />
+    <circle id="bubble" cx="44" cy="42" r="4.5" />
+    <circle id="bubble2" cx="45" cy="35" r="4" />
+    <circle id="bubble" cx="55" cy="35" r="9" />
+    <circle id="bubble" cx="65" cy="42" r="7" />
+    <circle id="bubble2" cx="73" cy="36" r="10" />
+    <circle id="bubble" cx="80" cy="33" r="5" />
+    <circle id="bubble2" cx="83" cy="40" r="8" />
+    <circle id="bubble2" cx="53" cy="41" r="5" />
+  </g>
+</svg>

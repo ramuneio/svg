@@ -1,2 +1,3 @@
 # svg
-Collection of lovingly made SVGs
+
+Collection of lovingly made SVGs.
